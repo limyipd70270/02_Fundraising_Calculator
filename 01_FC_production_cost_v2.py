@@ -73,7 +73,7 @@ if fixed_q == "yes":
             break
 
         # Get the fixed item costs
-        f_cost = float(num_check("Fixed Cost: $", "Please enter a whole number more than zero"))
+        f_cost = num_check("Fixed Cost: $", "Please enter a whole number more than zero", float)
 
         # Add fixed name and cost to cost list
         fixed_costs.append(fixed)
@@ -85,6 +85,8 @@ if fixed_q == "yes":
         # Add fixed_costs and variable_costs to expenses list
         expenses.append(fixed_costs)
 
+print (product)
+
 print ("** Variable Costs **")
 for item in all_variable_costs:
     print(item)
@@ -94,4 +96,7 @@ if fixed_q == "yes":
     print("** Fixed Costs ***")
     for item in all_fixed_costs:
         print(item)
+
+print (product)
+
 
