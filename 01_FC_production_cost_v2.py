@@ -1,13 +1,13 @@
 # Functions
 
-# Number checking function (number must be a float that is more than 0)
-def num_check(question, error_msg):
+# Number checking function (float for cost, integer for item amounts)
+def num_check(question, error_msg, type):
     error = error_msg
 
     valid = False
     while not valid:
         try:
-            response = float(input(question))
+            response = type(input(question))
 
             if response <= 0:
                 print(error)
@@ -22,7 +22,7 @@ def num_check(question, error_msg):
 product = input("What product are you selling to fundraise for?")
 
 # Ask user how much of your product is needed for selling
-item_amount = num_check("How much of your product do you need for selling?", "Please enter a whole number more than zero")
+item_amount = num_check("How much of your product do you need for selling?", "Please enter a whole number more than zero", int)
 
 # Initialise lists
 all_variable_costs = []
@@ -43,10 +43,10 @@ while variable.lower() != "xxx":
         break
 
     # Ask user how many of each item is needed
-    variable_amount = num_check("How many do you need?", "Please enter a whole number more than zero")
+    variable_amount = num_check("How many do you need?", "Please enter a whole number more than zero", int)
 
      # Get the variable item costs
-    v_cost = float(num_check("Item Cost: $", "Please enter a number more than zero"))
+    v_cost = num_check("Item Cost: $", "Please enter a number more than zero", float)
 
     variable_costs.append(variable)
     variable_costs.append(v_cost)
