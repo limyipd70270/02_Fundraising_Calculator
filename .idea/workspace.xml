@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d85bfbd6-4fc1-4c18-a68e-ca2c623be977" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01_FC_production_cost_v3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/02_Fundraising_Calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/02_Fundraising_Calculator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01_FC_individual_item_amounts.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/01_FC_production_cost_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/01_FC_production_cost_v2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_sorting_list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/03_profit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04_selling_price.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03_sorting_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/03_sorting_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/find_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_average.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +32,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Daniella/Comsci/COMSCI_2020/Recipe_Moderniser/10c_recipe_moderniser.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniella\Documents\GitHub\02_Fundraising_Calculator" />
       <recent name="H:\Documents\2020\COM_201\02_Fundraising_Calculator" />
     </key>
   </component>
@@ -194,9 +194,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590811413416" />
-    <state x="177" y="19" key="SettingsEditor" timestamp="1590803946775">
+    <state width="1345" height="64" key="GridCell.Tab.0.bottom" timestamp="1590837057669">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="177" y="19" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590803946775" />
+    <state width="1345" height="64" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590837057669" />
+    <state width="1345" height="64" key="GridCell.Tab.0.center" timestamp="1590837057667">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="64" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590837057667" />
+    <state width="1345" height="64" key="GridCell.Tab.0.left" timestamp="1590837057666">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="64" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590837057666" />
+    <state width="1345" height="64" key="GridCell.Tab.0.right" timestamp="1590837057669">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="64" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590837057669" />
+    <state x="177" y="19" key="SettingsEditor" timestamp="1590829494474">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="177" y="19" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590829494474" />
   </component>
 </project>

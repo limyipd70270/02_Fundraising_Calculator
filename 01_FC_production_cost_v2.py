@@ -21,9 +21,6 @@ def num_check(question, error_msg, type):
 # Ask user for the product they are selling
 product = input("What product are you selling to fundraise for?")
 
-# Ask user how much of your product is needed for selling
-item_amount = num_check("How much of your product do you need for selling?", "Please enter a whole number more than zero", int)
-
 # Initialise lists
 all_variable_costs = []
 all_fixed_costs = []
