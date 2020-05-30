@@ -1,13 +1,13 @@
 # Functions
 
 # Number checking function (number must be a float that is more than 0)
-def num_check(question, error_msg):
+def num_check(question, error_msg, type):
     error = error_msg
 
     valid = False
     while not valid:
         try:
-            response = float(input(question))
+            response = type(input(question))
 
             if response <= 0:
                 print(error)
@@ -19,6 +19,6 @@ def num_check(question, error_msg):
 
 # Ask user how many of each item is needed
 
-variable_amount = num_check("How many do you need for selling?", "Please enter a whole number more than zero")
-fixed_amount = num_check("How many do you need?", "Please enter a whole number more than zero")
+variable_amount = num_check("How many do you need for selling?", "Please enter a whole number more than zero", int)
+fixed_amount = num_check("How many do you need?", "Please enter a whole number more than zero", int)
 

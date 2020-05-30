@@ -85,18 +85,17 @@ if fixed_q == "yes":
         # Add fixed_costs and variable_costs to expenses list
         expenses.append(fixed_costs)
 
-print (product)
+print ("{} Fundraiser").format(product)
 
-print ("** Variable Costs **")
+print ("*** Variable Costs ***")
 for item in all_variable_costs:
     print(item)
 print()
 
 if fixed_q == "yes":
-    print("** Fixed Costs ***")
+    print("*** Fixed Costs ***")
     for item in all_fixed_costs:
         print(item)
 
-print (product)
 
 
