@@ -40,22 +40,18 @@ def num_check(question, error_msg, type):
             print(error)
 
 
-# Ask user for the product they are selling
-product = not_blank("What product are you selling to fundraise for?")
-
 # Initialise lists
 all_variable_costs = []
-all_fixed_costs = []
 expenses = []
 
-# Get inputs and add to item_cost list
+# Get inputs and add to variable_costs list
 # Ask for variable items
 variable = ""
 while variable.lower() != "xxx":
 
     # list for each row of variable costs
     variable_costs = []
-    variable = not_blank("Item Name: ")
+    variable = not_blank("Item Name: ", "You can't leave this blank, please enter the item name", "yes")
 
     # If user enters exit code, break out of loop
     if variable.lower() == "xxx":
@@ -77,44 +73,9 @@ while variable.lower() != "xxx":
     expenses.append(variable_costs)
 
 
-# Ask if they want a fixed_cost list and if so, get inputs for it
-fixed_q = input("Do you have any fixed costs?")
-
-if fixed_q == "yes":
-    fixed = ""
-    while fixed.lower() != "xxx":
-        # list for each row of fixed costs
-        fixed_costs = []
-        fixed = input("Fixed Cost Name: ")
-
-        # If user enters exit code, break out of loop
-        if fixed.lower() == "xxx":
-            break
-
-        # Get the fixed item costs
-        f_cost = num_check("Fixed Cost: $", "Please enter a whole number more than zero", float)
-
-        # Add fixed name and cost to cost list
-        fixed_costs.append(fixed)
-        fixed_costs.append(f_cost)
-
-        # entire variable list
-        all_fixed_costs.append(fixed_costs)
-
-        # Add fixed_costs and variable_costs to expenses list
-        expenses.append(fixed_costs)
-
-print ("{} Fundraiser").format(product)
-
 print ("*** Variable Costs ***")
 for item in all_variable_costs:
     print(item)
 print()
-
-if fixed_q == "yes":
-    print("*** Fixed Costs ***")
-    for item in all_fixed_costs:
-        print(item)
-
 
 

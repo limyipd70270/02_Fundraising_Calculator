@@ -40,52 +40,19 @@ def num_check(question, error_msg, type):
             print(error)
 
 
-# Ask user for the product they are selling
-product = not_blank("What product are you selling to fundraise for?")
-
 # Initialise lists
-all_variable_costs = []
 all_fixed_costs = []
 expenses = []
 
-# Get inputs and add to item_cost list
-# Ask for variable items
-variable = ""
-while variable.lower() != "xxx":
-
-    # list for each row of variable costs
-    variable_costs = []
-    variable = not_blank("Item Name: ")
-
-    # If user enters exit code, break out of loop
-    if variable.lower() == "xxx":
-        break
-
-    # Ask user how many of each item is needed
-    variable_amount = num_check("How many do you need?", "Please enter a whole number more than zero", int)
-
-     # Get the variable item costs
-    v_cost = num_check("Item Cost: $", "Please enter a number more than zero", float)
-
-    variable_costs.append(variable)
-    variable_costs.append(v_cost)
-
-    # entire variable list
-    all_variable_costs.append(variable_costs)
-
-    # Add all_variable_costs to expenses list
-    expenses.append(variable_costs)
-
-
 # Ask if they want a fixed_cost list and if so, get inputs for it
-fixed_q = input("Do you have any fixed costs?")
+fixed_q = not_blank("Do you have any fixed costs?", "Please enter 'yes' or 'no'", "yes" )
 
 if fixed_q == "yes":
     fixed = ""
     while fixed.lower() != "xxx":
         # list for each row of fixed costs
         fixed_costs = []
-        fixed = input("Fixed Cost Name: ")
+        fixed = not_blank("Fixed Cost Name: ", "You can't leave this blank, please enter what your fixed cost is", "yes")
 
         # If user enters exit code, break out of loop
         if fixed.lower() == "xxx":
@@ -104,17 +71,7 @@ if fixed_q == "yes":
         # Add fixed_costs and variable_costs to expenses list
         expenses.append(fixed_costs)
 
-print ("{} Fundraiser").format(product)
-
-print ("*** Variable Costs ***")
-for item in all_variable_costs:
-    print(item)
-print()
-
 if fixed_q == "yes":
     print("*** Fixed Costs ***")
     for item in all_fixed_costs:
         print(item)
-
-
-
