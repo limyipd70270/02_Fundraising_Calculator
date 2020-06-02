@@ -26,7 +26,7 @@ def not_blank(question, error_msg, num_ok):
 expenses_list = " "
 
 # Ask user if they want it ordered alphabetically or numerically (price)
-ordering = not_blank ("Would you like it ordered alphabetically (A) or by price (P)?", "Please enter 'A' or 'P'", no )
+ordering = not_blank ("Would you like it ordered alphabetically (A) or by price (P)?", "Please enter 'A' or 'P'", "no")
 
 if ordering == "P":
   # Sorting numerically (cost)
@@ -47,8 +47,4 @@ if ordering == "A":
   print("Items in alphabetical order")
   for item in expenses_list:
     print("{}: ${:.2f}".format(item[0], item[1]))
-
-    all_variable_costs
-    all_fixed_costs
-
 

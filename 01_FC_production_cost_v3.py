@@ -50,8 +50,6 @@ while expense.lower() != "xxx":
     # adds each row of costs to total cost list
     total_expenses.append(single_expense)
 
-# DON'T YOU NEED TO ADD A TOTALLL EXPENSES LIST WITH BOTH SUBLISTS WHICH INCLUDE THE ROWS????
-
 # Ask if they want a fixed_cost list and if so, get inputs for it
 fixed_q = input("Do you have any fixed costs?")
 
