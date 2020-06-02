@@ -68,8 +68,6 @@ if fixed_q == "yes":
         # entire variable list
         all_fixed_costs.append(fixed_costs)
 
-        # Add fixed_costs and variable_costs to expenses list
-        expenses.append(fixed_costs)
 
 if fixed_q == "yes":
     print("*** Fixed Costs ***")

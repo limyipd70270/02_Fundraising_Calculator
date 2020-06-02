@@ -69,9 +69,6 @@ while variable.lower() != "xxx":
     # entire variable list
     all_variable_costs.append(variable_costs)
 
-    # Add all_variable_costs to expenses list
-    expenses.append(variable_costs)
-
 
 print ("*** Variable Costs ***")
 for item in all_variable_costs:
