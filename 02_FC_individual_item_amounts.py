@@ -20,5 +20,4 @@ def num_check(question, error_msg, type):
 # Ask user how many of each item is needed
 
 variable_amount = num_check("How many do you need for selling?", "Please enter a whole number more than zero", int)
-fixed_amount = num_check("How many do you need?", "Please enter a whole number more than zero", int)
 

@@ -38,3 +38,13 @@ def num_check(question):
 
         except ValueError:
             print(error)
+
+
+
+# Ask if they want a fixed_cost list and if so, get inputs for it
+fixed_q = input("Do you have any fixed costs?")
+
+if fixed_q == "yes":
+    print("*** Fixed Costs ***")
+    for item in all_fixed_costs:
+
