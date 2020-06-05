@@ -24,7 +24,7 @@ def not_blank(question, error_msg, num_ok):
 
 
 # Ask user for the product they are selling
-product = not_blank("What product are you selling to fundraise for?", "You can't leave this blank, please enter the product you're fundraising for", "yes")
+product = not_blank("What product are you selling to fundraise for? ", "You can't leave this blank, please enter the product you're fundraising for", "yes")
 
 print ("{} Fundraiser".format(product))
 

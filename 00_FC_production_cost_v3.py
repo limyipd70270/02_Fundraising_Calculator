@@ -74,3 +74,5 @@ while expense.lower() != "xxx":
 for item in expense_list:
     print("{}: {}".format(item[0], item[1]))
 
+print(expense_list)
+
