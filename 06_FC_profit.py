@@ -44,3 +44,14 @@ def num_check(question, error_msg, type):
 # Ask if their profit will be in $ or %)
 profit = ""
 profit_type = not_blank("Is your profit in '$' or '%'?", "Please enter '$' or '%'", "no")
+
+if profit_type == "$":
+    # Get profit in $__
+    profit = num_check("How much profit would you like to make? $", "Please enter a number more than zero", float)
+    print("${}".format(profit))
+
+if profit_type == "%":
+    # Get profit in %__
+    profit = num_check("How much profit would you like to make? %", "Please enter a number more than zero", float)
+    print("%{}".format(profit))
+

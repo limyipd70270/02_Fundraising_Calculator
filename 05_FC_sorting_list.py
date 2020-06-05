@@ -23,12 +23,12 @@ def not_blank(question, error_msg, num_ok):
         else:
             return response
 
-expenses_list = " "
+expenses_list = []
 
 # Ask user if they want it ordered alphabetically or numerically (price)
-ordering = not_blank ("Would you like it ordered alphabetically (A) or by price (P)?", "Please enter 'A' or 'P'", "no")
+ordering = not_blank ("Would you like it ordered alphabetically (A) or by price (P)?", "Please enter 'A' or 'P'", "no").lower()
 
-if ordering == "P":
+if ordering == "p":
   # Sorting numerically (cost)
   expenses_list.sort(key=lambda x: x[1], reverse=1)
 
@@ -39,7 +39,7 @@ if ordering == "P":
 
 print()
 
-if ordering == "A":
+if ordering == "a":
   # Sorting alphabetically
   expenses_list.sort(key=lambda x: x[0])
 
